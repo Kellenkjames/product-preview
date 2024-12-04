@@ -5,6 +5,14 @@
   max-width: 60rem;
   width: 100%;
   display: flex;
-  border: 1px solid black;
-  padding: 3.2rem;
+  border-radius: 1rem;
+
+  &__img,
+  &__content {
+    width: 50%;
+  }
+
+  &__content {
+    padding: 3.2rem;
+  }
 }
