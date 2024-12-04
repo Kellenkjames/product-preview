@@ -1,4 +1,8 @@
 <div class="card">
-  <app-image-display class="card__img" />
-  <app-product-info class="card__content" />
+  <app-image-display
+    [desktopImageUrl]="product.desktopImageUrl"
+    [mobileImageUrl]="product.mobileImageUrl"
+    class="card__img"
+  />
+  <app-product-info [product]="product" class="card__content" />
 </div>
