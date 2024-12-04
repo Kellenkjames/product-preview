@@ -35,35 +35,38 @@ Here is a preview of the Product Preview Card Component:
 │   │       ├── card.component.html
 │   │       ├── card.component.scss
 │   │       └── card.component.ts
-├── styles
-│   └── main.scss
 ├── assets
+│   ├── styles
+│   │   └── styles.scss
 │   └── images
-│       ├── image-product-desktop.jpg
-│       └── image-product-mobile.jpg
+│       ├── product-desktop.jpg
+│       └── product-mobile.jpg
 ```
-
 
 ## Setup and Installation
 
 To run this project locally:
 
 #### 1. Clone the repository:
+
 ```bash
 git clone https://github.com/kellenkjames/product-preview.git
 ```
 
 #### 2. Navigate to the project directory:
+
 ```bash
 cd blog-preview-card
 ```
 
 #### 3. Install the dependencies:
+
 ```bash
 npm install
 ```
 
 #### 4. Start the Angular development server:
+
 ```bash
 ng serve
 ```
@@ -71,17 +74,22 @@ ng serve
 The project will be available on http://localhost:4200.
 
 ## Design Reference
+
 This blog preview card was designed to closely match the design specifications provided. The design assets, including images and color palette, can be found in the /images and style-guide.md files, respectively.
 
 ## Deployment
+
 The project can be deployed using any modern hosting platform. Recommended platforms include:
+
 - GitHub Pages
 - Vercel
 - Netlify
 
 ## Future Enhancements
+
 - Implement accessibility improvements to ensure compliance with WCAG standards.
 - Refactor the component into reusable subcomponents for potential future extensions.
 
 ## License
+
 - This project is open-source and available under the [MIT License](LICENSE).
