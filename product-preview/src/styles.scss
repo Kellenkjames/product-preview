@@ -1,0 +1,288 @@
+// -----------------------------------------------------
+// Global Styles
+// -----------------------------------------------------
+
+// Root font-size for responsive typography
+html {
+  font-size: clamp(
+    1.2rem,
+    1.1vw,
+    1.6rem
+  ); // Minimum 12px, scales with viewport, max 16px
+}
+
+// Typography
+$font-primary: 'Montserrat', sans-serif;
+$font-secondary: 'Fraunces', serif;
+
+$font-weight-regular: 500;
+$font-weight-bold: 700;
+
+// Colors
+$color-primary-dark-cyan: hsl(158, 36%, 37%);
+$color-primary-cream: hsl(30, 38%, 92%);
+
+$color-neutral-dark-blue: hsl(212, 21%, 14%);
+$color-neutral-grayish-blue: hsl(228, 12%, 48%);
+$color-neutral-white: hsl(0, 0%, 100%);
+
+// Global resets
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+// -----------------------------------------------------
+// Typography
+// -----------------------------------------------------
+
+$font-size-header: clamp(2.4rem, 2.5vw, 3.2rem); // Display Header
+$font-size-body: clamp(1.2rem, 1.3vw, 1.4rem); // Body Text
+$font-size-button: clamp(1.2rem, 1.3vw, 1.4rem); // Button Text
+$font-size-overline: clamp(1rem, 1vw, 1.2rem); // Overline
+
+h1,
+h2,
+h3 {
+  font-size: $font-size-header;
+  font-family: $font-secondary;
+  font-weight: $font-weight-bold;
+}
+
+p {
+  font-size: $font-size-body;
+  color: $color-neutral-grayish-blue;
+}
+
+button {
+  font-size: $font-size-button;
+  text-transform: uppercase;
+}
+
+.overline {
+  font-size: $font-size-overline;
+  letter-spacing: 0.1rem;
+}
+
+// -----------------------------------------------------
+// Images
+// -----------------------------------------------------
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+// -----------------------------------------------------
+// Utility Classes for Spacing
+// -----------------------------------------------------
+
+// Spacing variables
+$spacing-xl: 12.8rem; // 128px
+$spacing-lg: 4rem; // 40px
+$spacing-md: 2.4rem; // 24px
+$spacing-sm: 1.6rem; // 16px
+$spacing-xs: 1.2rem; // 12px
+$spacing-xxs: 0.8rem; // 8px
+
+// Utility classes for padding (all sides)
+.p-xl {
+  padding: $spacing-xl;
+}
+.p-lg {
+  padding: $spacing-lg;
+}
+.p-md {
+  padding: $spacing-md;
+}
+.p-sm {
+  padding: $spacing-sm;
+}
+.p-xs {
+  padding: $spacing-xs;
+}
+.p-xxs {
+  padding: $spacing-xxs;
+}
+
+// Padding directional classes
+.pt-xl {
+  padding-top: $spacing-xl;
+}
+.pb-xl {
+  padding-bottom: $spacing-xl;
+}
+.pl-xl {
+  padding-left: $spacing-xl;
+}
+.pr-xl {
+  padding-right: $spacing-xl;
+}
+
+.pt-lg {
+  padding-top: $spacing-lg;
+}
+.pb-lg {
+  padding-bottom: $spacing-lg;
+}
+.pl-lg {
+  padding-left: $spacing-lg;
+}
+.pr-lg {
+  padding-right: $spacing-lg;
+}
+
+.pt-md {
+  padding-top: $spacing-md;
+}
+.pb-md {
+  padding-bottom: $spacing-md;
+}
+.pl-md {
+  padding-left: $spacing-md;
+}
+.pr-md {
+  padding-right: $spacing-md;
+}
+
+.pt-sm {
+  padding-top: $spacing-sm;
+}
+.pb-sm {
+  padding-bottom: $spacing-sm;
+}
+.pl-sm {
+  padding-left: $spacing-sm;
+}
+.pr-sm {
+  padding-right: $spacing-sm;
+}
+
+.pt-xs {
+  padding-top: $spacing-xs;
+}
+.pb-xs {
+  padding-bottom: $spacing-xs;
+}
+.pl-xs {
+  padding-left: $spacing-xs;
+}
+.pr-xs {
+  padding-right: $spacing-xs;
+}
+
+.pt-xxs {
+  padding-top: $spacing-xxs;
+}
+.pb-xxs {
+  padding-bottom: $spacing-xxs;
+}
+.pl-xxs {
+  padding-left: $spacing-xxs;
+}
+.pr-xxs {
+  padding-right: $spacing-xxs;
+}
+
+// Utility classes for margin (all sides)
+.m-xl {
+  margin: $spacing-xl;
+}
+.m-lg {
+  margin: $spacing-lg;
+}
+.m-md {
+  margin: $spacing-md;
+}
+.m-sm {
+  margin: $spacing-sm;
+}
+.m-xs {
+  margin: $spacing-xs;
+}
+.m-xxs {
+  margin: $spacing-xxs;
+}
+
+// Margin directional classes
+.mt-xl {
+  margin-top: $spacing-xl;
+}
+.mb-xl {
+  margin-bottom: $spacing-xl;
+}
+.ml-xl {
+  margin-left: $spacing-xl;
+}
+.mr-xl {
+  margin-right: $spacing-xl;
+}
+
+.mt-lg {
+  margin-top: $spacing-lg;
+}
+.mb-lg {
+  margin-bottom: $spacing-lg;
+}
+.ml-lg {
+  margin-left: $spacing-lg;
+}
+.mr-lg {
+  margin-right: $spacing-lg;
+}
+
+.mt-md {
+  margin-top: $spacing-md;
+}
+.mb-md {
+  margin-bottom: $spacing-md;
+}
+.ml-md {
+  margin-left: $spacing-md;
+}
+.mr-md {
+  margin-right: $spacing-md;
+}
+
+.mt-sm {
+  margin-top: $spacing-sm;
+}
+.mb-sm {
+  margin-bottom: $spacing-sm;
+}
+.ml-sm {
+  margin-left: $spacing-sm;
+}
+.mr-sm {
+  margin-right: $spacing-sm;
+}
+
+.mt-xs {
+  margin-top: $spacing-xs;
+}
+.mb-xs {
+  margin-bottom: $spacing-xs;
+}
+.ml-xs {
+  margin-left: $spacing-xs;
+}
+.mr-xs {
+  margin-right: $spacing-xs;
+}
+
+.mt-xxs {
+  margin-top: $spacing-xxs;
+}
+.mb-xxs {
+  margin-bottom: $spacing-xxs;
+}
+.ml-xxs {
+  margin-left: $spacing-xxs;
+}
+.mr-xxs {
+  margin-right: $spacing-xxs;
+}
