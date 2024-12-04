@@ -2,13 +2,8 @@
 // Global Styles
 // -----------------------------------------------------
 
-// Root font-size for responsive typography
 html {
-  font-size: clamp(
-    1.2rem,
-    1.1vw,
-    1.6rem
-  ); // Minimum 12px, scales with viewport, max 16px
+  font-size: 62.5%; // 62.5% of 16px = 10px for easy rem calculations
 }
 
 // Typography
@@ -39,17 +34,25 @@ $color-neutral-white: hsl(0, 0%, 100%);
 // Typography
 // -----------------------------------------------------
 
-$font-size-header: clamp(2.4rem, 2.5vw, 3.2rem); // Display Header
-$font-size-body: clamp(1.2rem, 1.3vw, 1.4rem); // Body Text
-$font-size-button: clamp(1.2rem, 1.3vw, 1.4rem); // Button Text
-$font-size-overline: clamp(1rem, 1vw, 1.2rem); // Overline
+$font-size-body: 1.4rem; // 14px
+$font-size-heading: 3.2rem; // 32px
+$font-size-button: 1.4rem; // 14px
+$font-size-overline: 1.2rem; // 12px
+
+body {
+  font-family: $font-primary;
+  font-size: $font-size-body; // Default body font size
+  line-height: 1.6; // 160%
+  color: $color-neutral-dark-blue;
+}
 
 h1,
 h2,
 h3 {
-  font-size: $font-size-header;
+  font-size: $font-size-heading;
   font-family: $font-secondary;
   font-weight: $font-weight-bold;
+  color: $color-primary-dark-cyan;
 }
 
 p {
@@ -59,12 +62,14 @@ p {
 
 button {
   font-size: $font-size-button;
+  font-weight: $font-weight-bold;
   text-transform: uppercase;
 }
 
 .overline {
   font-size: $font-size-overline;
-  letter-spacing: 0.1rem;
+  font-weight: $font-weight-bold;
+  text-transform: uppercase;
 }
 
 // -----------------------------------------------------
