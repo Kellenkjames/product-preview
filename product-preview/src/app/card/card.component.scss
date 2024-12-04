@@ -1,0 +1,10 @@
+@import '../../styles.scss';
+
+.card {
+  background-color: $color-neutral-white;
+  max-width: 60rem;
+  width: 100%;
+  display: flex;
+  border: 1px solid black;
+  padding: 3.2rem;
+}
