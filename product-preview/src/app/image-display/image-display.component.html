@@ -1,5 +1,6 @@
 <picture class="product-img">
   <source media="(min-width: 768px)" [srcset]="desktopImageUrl" />
-  <source media="(max-width: 768px)" [srcset]="mobileImageUrl" />
+  <!-- FIX THIS -->
+  <source media="(max-width: 425px)" [srcset]="mobileImageUrl" />
   <img [src]="desktopImageUrl" alt="Product Image" />
 </picture>
