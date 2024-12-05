@@ -17,6 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+            "baseHref": "https://kellenkjames.github.io/product-preview/",
             "outputPath": "dist/product-preview",
             "index": "src/index.html",
             "browser": "src/main.ts",
