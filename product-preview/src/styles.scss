@@ -84,10 +84,27 @@ img {
 @mixin overline {
   text-transform: uppercase;
   color: $color-neutral-grayish-blue;
-  font-family: $font-primary;
   font-size: 1.2rem;
+  font-weight: $font-weight-regular;
   letter-spacing: 0.5rem;
   line-height: 1.5rem;
+}
+
+@mixin product-title {
+  color: $color-neutral-dark-blue;
+  font-family: $font-secondary;
+  font-style: normal;
+  font-weight: $font-weight-bold;
+  font-size: 3.2rem;
+  line-height: 3.2rem;
+}
+
+@mixin product-desc {
+  font-style: normal;
+  font-weight: $font-weight-regular;
+  color: $color-neutral-grayish-blue;
+  font-size: 1.4rem;
+  line-height: 2.3rem;
 }
 
 // -----------------------------------------------------

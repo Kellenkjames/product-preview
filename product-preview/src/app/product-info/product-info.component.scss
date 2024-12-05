@@ -6,5 +6,15 @@
 
   &__overline {
     @include overline;
+    margin-bottom: 2rem;
+  }
+
+  &__title {
+    @include product-title;
+    margin-bottom: 2.4rem;
+  }
+
+  &__desc {
+    @include product-desc;
   }
 }
