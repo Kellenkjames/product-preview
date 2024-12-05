@@ -8,16 +8,8 @@
   flex-wrap: wrap;
   border-radius: 0.8rem;
 
-  @media screen and (max-width: 42.5rem) {
-    max-width: 40rem;
-  }
-
-  @media screen and (max-width: 37.5rem) {
-    max-width: 35rem;
-  }
-
-  @media screen and (max-width: 32rem) {
-    max-width: 29rem;
+  @media screen and (max-width: 65rem) {
+    max-width: 90vw;
   }
 
   &__img,
