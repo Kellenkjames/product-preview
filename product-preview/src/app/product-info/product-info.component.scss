@@ -16,5 +16,34 @@
 
   &__desc {
     @include product-desc;
+    margin-bottom: 2.9rem;
+  }
+
+  &__pricing {
+    display: flex;
+    align-items: center;
+    gap: 1.9rem;
+    margin-bottom: 3rem;
+
+    &__new {
+      @include pricing-new;
+    }
+
+    &__old {
+      @include pricing-old;
+    }
+  }
+
+  &__button {
+    @include button;
+    transition: background-color 0.3s ease-in-out;
+
+    &:hover {
+      background-color: #1a4032;
+    }
+
+    &__text {
+      @include button-text;
+    }
   }
 }

@@ -61,12 +61,6 @@ p {
   color: $color-neutral-grayish-blue;
 }
 
-button {
-  font-size: $font-size-button;
-  font-weight: $font-weight-bold;
-  text-transform: uppercase;
-}
-
 // -----------------------------------------------------
 // Images
 // -----------------------------------------------------
@@ -100,11 +94,49 @@ img {
 }
 
 @mixin product-desc {
+  color: $color-neutral-grayish-blue;
   font-style: normal;
   font-weight: $font-weight-regular;
-  color: $color-neutral-grayish-blue;
   font-size: 1.4rem;
   line-height: 2.3rem;
+}
+
+@mixin pricing-new {
+  color: $color-primary-dark-cyan;
+  font-family: $font-secondary;
+  font-style: normal;
+  font-weight: $font-weight-bold;
+  font-size: 3.2rem;
+  line-height: 3.2rem;
+}
+
+@mixin pricing-old {
+  color: $color-neutral-grayish-blue;
+  font-style: normal;
+  font-weight: $font-weight-bold;
+  font-size: 1.3rem;
+  line-height: 2.3rem;
+  text-decoration-line: line-through;
+}
+
+@mixin button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.161rem;
+  background: $color-primary-dark-cyan;
+  border: none;
+  border-radius: 0.8rem;
+  padding: 1.5rem 6.2rem 1.5rem 6.3rem;
+  cursor: pointer;
+}
+
+@mixin button-text {
+  color: $color-neutral-white;
+  font-style: normal;
+  font-weight: $font-weight-bold;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
 }
 
 // -----------------------------------------------------

@@ -2,4 +2,16 @@
   <span class="content__overline">{{ product.type }}</span>
   <h1 class="content__title">{{ product.title }}</h1>
   <p class="content__desc">{{ product.description }}</p>
+  <div class="content__pricing">
+    <span class="content__pricing__new">{{ product.newPrice }}</span>
+    <span class="content__pricing__old">{{ product.oldPrice }}</span>
+  </div>
+  <button class="content__button">
+    <img
+      class="content__button__img"
+      [src]="product.cartIcon"
+      alt="Add to cart"
+    />
+    <strong class="content__button__text">{{ product.cartDesc }}</strong>
+  </button>
 </section>
