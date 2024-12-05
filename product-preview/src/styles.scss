@@ -6,13 +6,6 @@ html {
   font-size: 62.5%; // 62.5% of 16px = 10px for easy rem calculations
 }
 
-// Typography
-$font-primary: 'Montserrat', sans-serif;
-$font-secondary: 'Fraunces', serif;
-
-$font-weight-regular: 500;
-$font-weight-bold: 700;
-
 // Colors
 $color-primary-dark-cyan: hsl(158, 36%, 37%);
 $color-primary-cream: hsl(30, 38%, 92%);
@@ -31,8 +24,35 @@ $color-neutral-white: hsl(0, 0%, 100%);
 }
 
 // -----------------------------------------------------
+// Fonts
+// -----------------------------------------------------
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  src: url('assets/fonts/Montserrat/static/Montserrat-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  src: url('assets/fonts/Montserrat/static/Montserrat-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Fraunces';
+  font-weight: 700;
+  src: url('assets/fonts/Fraunces/static/Fraunces_144pt-Bold.ttf');
+}
+
+// -----------------------------------------------------
 // Typography
 // -----------------------------------------------------
+
+$font-primary: 'Montserrat', sans-serif;
+$font-secondary: 'Fraunces', serif;
+
+$font-weight-regular: 500;
+$font-weight-bold: 700;
 
 $font-size-body: 1.4rem; // 14px
 $font-size-heading: 3.2rem; // 32px
