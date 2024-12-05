@@ -67,12 +67,6 @@ button {
   text-transform: uppercase;
 }
 
-.overline {
-  font-size: $font-size-overline;
-  font-weight: $font-weight-bold;
-  text-transform: uppercase;
-}
-
 // -----------------------------------------------------
 // Images
 // -----------------------------------------------------
@@ -81,6 +75,19 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+// -----------------------------------------------------
+// Mixins
+// -----------------------------------------------------
+
+@mixin overline {
+  text-transform: uppercase;
+  color: $color-neutral-grayish-blue;
+  font-family: $font-primary;
+  font-size: 1.2rem;
+  letter-spacing: 0.5rem;
+  line-height: 1.5rem;
 }
 
 // -----------------------------------------------------

@@ -13,7 +13,7 @@ export class AppComponent {
   product: Product = {
     desktopImageUrl: 'assets/images/image-product-desktop.jpg',
     mobileImageUrl: 'assets/images/image-product-mobile.jpg',
-    overline: 'Perfume',
+    type: 'Perfume',
     title: 'Gabrielle Essence Eau De Parfum',
     description:
       'A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.',

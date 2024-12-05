@@ -1,7 +1,7 @@
 export interface Product {
   desktopImageUrl: string;
   mobileImageUrl: string;
-  overline: string;
+  type: string;
   title: string;
   description: string;
   newPrice: string;

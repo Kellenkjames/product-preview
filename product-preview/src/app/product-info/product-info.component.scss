@@ -1,0 +1,10 @@
+@import '../../styles.scss';
+
+.content {
+  display: flex;
+  flex-direction: column;
+
+  &__overline {
+    @include overline;
+  }
+}
