@@ -38,6 +38,10 @@
     @include button;
     transition: background-color 0.3s ease-in-out;
 
+    @media screen and (max-width: 32rem) {
+      padding: 1.5rem 5.5rem;
+    }
+
     &:hover {
       background-color: #1a4032;
     }
