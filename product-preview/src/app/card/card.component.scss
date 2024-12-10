@@ -16,6 +16,10 @@
     max-width: 78rem;
   }
 
+  @media screen and (min-width: 102.4rem) {
+    max-width: 60rem;
+  }
+
   &__img,
   &__content {
     width: 50%;
