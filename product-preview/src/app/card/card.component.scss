@@ -23,5 +23,11 @@
 
   &__content {
     padding: 3.2rem;
+
+    &__button {
+      @media screen and (max-width: 32rem) {
+        padding: 1.5rem 5.5rem;
+      }
+    }
   }
 }
