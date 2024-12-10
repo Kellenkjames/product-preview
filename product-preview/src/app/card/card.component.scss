@@ -9,11 +9,11 @@
   border-radius: 0.8rem;
 
   @media screen and (max-width: 32rem) {
-    max-width: 90rem;
+    max-width: 90vw;
   }
 
   @media screen and (min-width: 76.8rem) {
-    max-width: 60rem;
+    max-width: 78vw;
   }
 
   &__img,
