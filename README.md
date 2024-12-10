@@ -16,7 +16,7 @@ This project focuses on implementing responsive design principles, optimizing im
 
 Here is a preview of the Product Preview Card Component:
 
-![Product Preview Card Screenshot](./product-preview-card/src/assets/final-screenshot.png)
+![Product Preview Card Screenshot](./product-preview/src/assets/images/final_screenshot.png)
 
 ## Technologies Used
 
